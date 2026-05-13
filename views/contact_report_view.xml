@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ====================================================== -->
+    <!-- MAIN FORM -->
+    <!-- ====================================================== -->
+
+    <record id="view_contact_report_form" model="ir.ui.view">
+
+        <field name="name">contact.report.form</field>
+
+        <field name="model">contact.report</field>
+
+        <field name="arch" type="xml">
+
+            <form string="Contact Registers">
+
+                <sheet class="o_contact_report_page">
+
+                    <!-- FILTER BOX -->
+
+                    <div class="o_contact_filter_box">
+
+                        <group col="3">
+
+                            <!-- COMPANY -->
+
+                            <group>
+
+                                <field
+                                    name="company_id"
+                                    options="{'no_create': True}"
+                                />
+
+                            </group>
+
+                            <!-- TYPE -->
+
+                            <group>
+
+                                <field name="customer"/>
+
+                                <field name="supplier"/>
+
+                            </group>
+
+                            <!-- STATUS -->
+
+                            <group>
+
+                                <field name="active"/>
+
+                                <field name="inactive"/>
+
+                            </group>
+
+                        </group>
+
+                        <!-- BUTTON -->
+
+                        <div class="o_contact_btn_group">
+
+                            <!-- APPLY -->
+
+                            <button
+                                name="action_apply"
+                                string="Áp dụng"
+                                type="object"
+                                icon="fa-filter"
+                                class="btn btn-primary o_contact_apply_btn"
+                            />
+
+                            <!-- EXPORT -->
+
+                            <button
+                                name="action_export_excel"
+                                string="Export Excel"
+                                type="object"
+                                icon="fa-download"
+                                class="btn btn-success o_contact_export_btn"
+                            />
+
+                        </div>
+
+                    </div>
+
+                    <!-- TITLE -->
+
+                    <div class="o_contact_report_title">
+
+                        Contact Registers Report
+
+                    </div>
+
+                    <!-- TABLE -->
+
+                    <div class="o_contact_table">
+
+                        <field name="line_ids" nolabel="1">
+
+                            <list
+                                create="0"
+                                delete="0"
+                                edit="0">
+
+                                <field
+                                    name="sequence"
+                                    string="#"
+                                />
+
+                                <field name="name"/>
+
+                                <field name="email"/>
+
+                                <field name="phone"/>
+
+                                <field name="company"/>
+
+                                <field
+                                    name="status"
+                                    widget="badge"
+                                    decoration-success="status == 'Active'"
+                                    decoration-danger="status == 'Inactive'"
+                                />
+
+                            </list>
+
+                        </field>
+
+                    </div>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>

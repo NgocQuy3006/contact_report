@@ -1,0 +1,193 @@
+.o_contact_report_page {
+    padding: 24px !important;
+    background: #f7f7f7 !important;
+}
+
+
+/* FULL WIDTH FORM */
+.o_form_sheet_bg {
+    max-width: 100% !important;
+}
+
+.o_form_sheet {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+
+/* HIDE TOP BAR */
+.o_form_view .o_control_panel {
+    display: none !important;
+}
+
+
+/* FILTER BOX */
+.o_contact_filter_box {
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 28px !important;
+    margin-bottom: 28px !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+}
+
+
+/* COMPANY FIELD */
+.o_contact_filter_box .o_field_widget[name="company_id"] {
+    width: 100% !important;
+}
+
+.o_contact_filter_box .o_field_widget[name="company_id"] input,
+.o_contact_filter_box .o_field_widget[name="company_id"] .o_input,
+.o_contact_filter_box .o_field_widget[name="company_id"] .o-autocomplete--input {
+
+    height: 48px !important;
+    border-radius: 6px !important;
+    border: 1px solid #bdbdbd !important;
+
+    background: #ffffff !important;
+
+    padding-left: 14px !important;
+
+    font-size: 16px !important;
+    font-weight: 500 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* LABEL */
+.o_contact_filter_box label {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #111111 !important;
+    margin-bottom: 8px !important;
+}
+
+
+/* BUTTON AREA */
+.o_contact_btn_group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    margin-top: 24px !important;
+}
+
+
+/* APPLY BUTTON */
+.o_contact_apply_btn {
+    background: #7c68b3 !important;
+    border: none !important;
+
+    color: #ffffff !important;
+
+    border-radius: 6px !important;
+
+    padding: 12px 22px !important;
+
+    font-size: 16px !important;
+    font-weight: 600 !important;
+
+    box-shadow: none !important;
+}
+
+.o_contact_apply_btn:hover {
+    background: #6e5aa8 !important;
+    color: #ffffff !important;
+}
+
+
+/* APPLY ICON */
+.o_contact_apply_btn i {
+    color: #ffffff !important;
+    margin-right: 6px !important;
+}
+
+
+/* EXPORT BUTTON */
+.o_contact_export_btn {
+    background: transparent !important;
+    border: none !important;
+
+    color: #16a34a !important;
+
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    font-weight: 600 !important;
+
+    box-shadow: none !important;
+}
+
+.o_contact_export_btn:hover {
+    background: transparent !important;
+    color: #15803d !important;
+}
+
+
+/* EXPORT ICON */
+.o_contact_export_btn i {
+    color: #16a34a !important;
+    margin-right: 6px !important;
+}
+
+
+/* TITLE */
+.o_contact_report_title {
+    background: #5b3b57 !important;
+    color: white !important;
+    padding: 20px 26px !important;
+    border-radius: 14px 14px 0 0 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+
+/* TABLE */
+.o_contact_table {
+    width: 100% !important;
+}
+
+.o_contact_table .o_field_x2many {
+    width: 100% !important;
+}
+
+.o_contact_table .o_list_renderer {
+    width: 100% !important;
+}
+
+.o_contact_table .o_list_table {
+    width: 100% !important;
+    table-layout: auto !important;
+    background: white !important;
+    border-collapse: collapse !important;
+    border: 1px solid #d6d9dc !important;
+}
+
+
+/* HEADER */
+.o_contact_table .o_list_table thead {
+    background: #ffffff !important;
+}
+
+.o_contact_table .o_list_table thead th {
+    color: #222 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border: 1px solid #d6d9dc !important;
+    padding: 16px !important;
+    font-size: 14px !important;
+}
+
+
+/* BODY */
+.o_contact_table .o_list_table tbody td {
+    padding: 15px !important;
+    border: 1px solid #d6d9dc !important;
+    font-size: 14px !important;
+}
+
+
+/* HOVER */
+.o_contact_table .o_list_table tbody tr:hover {
+    background: #f8f9fb !important;
+}

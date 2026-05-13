@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ROOT MENU -->
+    <menuitem
+        id="menu_contact_report_root"
+        name="Enterprise Reporting"
+        parent="contacts.menu_contacts"
+        sequence="99"
+    />
+
+    <!-- ACTION -->
+    <record id="action_contact_report"
+            model="ir.actions.act_window">
+
+        <field name="name">Contact Registers</field>
+
+        <field name="res_model">contact.report</field>
+
+        <field name="view_mode">form</field>
+
+        <field name="target">current</field>
+
+    </record>
+
+    <!-- XLSX REPORT -->
+    <record id="contact_report_xlsx_action"
+            model="ir.actions.report">
+
+        <field name="name">Contact Registers</field>
+
+        <field name="model">contact.report</field>
+
+        <field name="report_type">xlsx</field>
+
+        <!-- IMPORTANT: MUST BE ONE LINE -->
+        <field name="report_name">contact_excel_report.contact_report_xlsx</field>
+
+        <!-- IMPORTANT: MUST BE ONE LINE -->
+        <field name="report_file">contact_excel_report.contact_report_xlsx</field>
+
+    </record>
+
+    <!-- MENU -->
+    <menuitem
+        id="menu_contact_register_report"
+        name="Contact Registers"
+        parent="menu_contact_report_root"
+        action="action_contact_report"
+        sequence="1"
+    />
+
+</odoo>
